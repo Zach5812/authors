@@ -34,6 +34,7 @@ const CreateForm = (props) => {
                 <label>Name</label>
                 <input type="text" name="name" id="" value={name} onChange={e => setName(e.target.value)} />
                 {errors.map((err, index) => <p key={index} style={{color: "red"}}>{err}</p>)}
+                <Link to={"/"}>Cancel</Link>
                 <button type='submit'>Submit</button>
             </div>
             {errors.map((err, index) => <p key={index} style={{color: "red"}}>{err}</p>)}
